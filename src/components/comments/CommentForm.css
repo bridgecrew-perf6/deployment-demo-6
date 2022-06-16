@@ -1,0 +1,17 @@
+.user-icon {
+    margin: 10px;
+}
+
+input#commentDraft {
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+button[type=submit] {
+    background-color: white;
+    border: 1px solid black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-right: 5px;
+}
