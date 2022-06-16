@@ -1,6 +1,7 @@
 import { Component } from "react";
 import withRouter from "../hoc/withRouter";
 import CommentForm from "./CommentForm";
+import Comment from "./Comment";
 import {
   commentsCollection,
   getCommentsByVideo,
@@ -48,8 +49,20 @@ class CommentFeed extends Component {
     const {
       params: { videoId },
     } = this.props;
+    const { comments } = this.state;
 
-    return <CommentForm videoId={videoId} />;
+    return (
+      <section className="comment-feed">
+        <CommentForm videoId={videoId} />
+        <ul>
+          {comments.map((comment, idx) => (
+            <li key={idx}>
+              <Comment comment={comment} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
   }
 }
 
