@@ -1,0 +1,10 @@
+.user-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.user-icon img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
